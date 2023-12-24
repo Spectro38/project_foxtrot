@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper{
+    background-color: #E2E3E9;
+    flex:1 0 auto ;
+    /* Цей блок займає весь доступний залишок висоти */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    padding: 20px;
+}
+
+.header{
+   
+    background-color: #E96707;
+    width: 100%;
+    display: flex;
+    padding: 10px
+}
+
+.footer{
+    
+    background-color: #0c061a;
+    color:white;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.item{
+    border: 1px solid #f2f3f5;
+    padding: 40px;
+    font-size: 25px;
+    height: fit-content;
+    flex-basis: 1%;
+    background-color: white;
+    
+    
+}
+
+.footer > div {
+    flex: 1; /* Розподіл простору рівномірно між дочірніми елементами */
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Приховує сайдбар, коли ширина екрану менше або дорівнює 768px */
+    }
+}
