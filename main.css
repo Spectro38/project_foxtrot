@@ -21,11 +21,9 @@ body {
 }
 
 .header{
-   
     background-color: #E96707;
-    width: 100%;
     display: flex;
-    padding: 10px
+    padding: 10px;
 }
 
 .footer{
@@ -64,4 +62,22 @@ body {
     .sidebar {
         display: none; /* Приховує сайдбар, коли ширина екрану менше або дорівнює 768px */
     }
+}
+
+.search-pole{
+  background-color: #e38e63;
+  color: white;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+::placeholder{
+  color: white;
+}
+
+.search-button{
+    background-color: #ffc9ae;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    color: white;
 }
